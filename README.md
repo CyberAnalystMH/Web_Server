@@ -63,10 +63,10 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 
 
 **Annotations:** 
-- After installing Rock Linux I did "dnf update -y" 
-- Once it finished updating, I did "dnf install httpd -y" and
-- Then: systemctl enable --now httpd so that system is auto-enabled when the system is booted
-- Then, enabled SSH
+- After installing Rock Linux I did "dnf update -y". 
+- Once it finished updating, I did "dnf install httpd -y".
+- Then: systemctl enable --now httpd so that system is auto-enabled when the system is booted.
+- Then, enabled SSH.
 
 <img width="492" height="43" alt="image" src="https://github.com/user-attachments/assets/a46ad183-2263-4d45-bf0d-ba9176285c7d" /> 
 
@@ -74,18 +74,20 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 <img width="425" height="233" alt="image" src="https://github.com/user-attachments/assets/f8a74a13-613a-40c4-8cae-844c708231bb" />
 
 **Annotations:** 
-- Then made a directory for my project: mkdir /server_project with an index.html
-- Instead of /var/www/html, I wanted it to point to /server_project
+- Then made a directory for my project: mkdir /server_project with an index.html.
+- Instead of /var/www/html, I wanted it to point to /server_project.
 
 
 <img width="885" height="114" alt="image" src="https://github.com/user-attachments/assets/40b1e2a0-36fc-4ed7-9d15-e1bbfb60884d" />
 
 
 **Annotations:** 
-- Because SELinux will automatically block a new directories in httpd.conf, semanage must be used
+- Because SELinux will automatically block a new directories in httpd.conf, semanage must be used.
 
 
 <img width="874" height="115" alt="image" src="https://github.com/user-attachments/assets/46572bf1-576a-41a5-8643-e3930486899f" />
+
+<img width="196" height="24" alt="image" src="https://github.com/user-attachments/assets/91dbda01-5d05-4020-b56b-8226bcde11af" />
 
 
 **Annotations:** 
@@ -156,7 +158,7 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 
 <img width="987" height="160" alt="image" src="https://github.com/user-attachments/assets/9aec7fe4-81af-4a5c-890b-f2a8988216c8" />
 
-**Annotations:** Everyone gets a welcome.txt, defined in /etc/skel/welcome.txt
+**Annotations:** Everyone gets a welcome.txt, defined in /etc/skel/welcome.txt.
 
 <img width="178" height="69" alt="image" src="https://github.com/user-attachments/assets/d88a215c-3395-45d3-ae78-0bb01ce7efa4" />
 
