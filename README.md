@@ -283,12 +283,18 @@ Linux Hardening is fun and complicated. There are several tools to guide you thr
 
 **Annotations:** Then tuned it into a Systemd so it auto-runs at specified times. 
 
+**System Backup:**
+
+<img width="718" height="365" alt="image" src="https://github.com/user-attachments/assets/8c82a27e-2798-4516-bba0-16f03a069389" />
+
+**Annotations:** I already have 2 Backup Systems on Proxmox Backup server, it was as simple as assigning the machines to a backup server.
+
 
 # Will everything survive a Reboot? 
 
 The answer is: **Yes!** 
 
-Everything works as left when rebooting. 
+**Everything works as left when rebooting.** 
 
 # Conclusions 
 
