@@ -132,6 +132,24 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 
 **Annotations:** Names are made up but this is a working DB with working functions, very basic but gets the job done.
 
+
+# Remote Database
+
+The above DB is on the same server as the Web Server which is okay but not efficient. I followed all the steps I did on the first install then just repeated it on the second server, since the data before were test data, the data is brand new but it works. 
+
+<img width="1260" height="468" alt="image" src="https://github.com/user-attachments/assets/672ce79e-98f6-423a-afc6-52e1229ca3a1" />
+
+**Annotations:** First step is to input the server into hosts then make a ssh keygen then copy the key to the remote server.
+
+
+<img width="669" height="621" alt="image" src="https://github.com/user-attachments/assets/f96111fd-902d-4bb5-8273-a9a40e8022b9" />
+
+<b/>
+<img width="694" height="404" alt="image" src="https://github.com/user-attachments/assets/4676c424-818f-4af1-92d6-a850583b23d8" />
+
+
+**Annotations:** After following all the steps, it works on the remote server as well, the only difference is instead of "localhoist" on the php, it's just the IP address of the remote server. Now this wouldn't been much easier if I simply cloned the Web Server and removed the httpd aspects and left everything else but sometimes starting fresh is better.
+
 # Managing Users
 
 **Made-Up Scenario:** Since I'm a Linux Admin and have no skills in code making but my Co-Workers do! But they're somewhat familiar in Linux but they can't do anything other than the basics.
@@ -197,6 +215,13 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 <img width="668" height="85" alt="image" src="https://github.com/user-attachments/assets/2e9759c9-881c-4f8a-badd-9055b380c752" />
 
 **Annotations:** The welcome. 
+
+
+<img width="335" height="49" alt="image" src="https://github.com/user-attachments/assets/3d31524b-d01c-4009-a0b9-49cb9263de87" />
+
+**Annotations:** Since moving more to a remote DB, I think I need help in managing it, oh hey! Look, jr_john who's also a Junior System Admin will be joining the team, he needs some permissions....but it's kinda awkward to have to have two people with root, so I''ll make him also an admin on the DB server. 
+
+
 
 # Overall Basic Security 
 
