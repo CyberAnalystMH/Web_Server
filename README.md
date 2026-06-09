@@ -59,7 +59,7 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 # HTTPD
 
 
-<img width="1081" height="358" alt="image" src="https://github.com/user-attachments/assets/5447c7cf-e6ab-4fc4-942f-b93569b3be3d" />
+<img width="1081" height="358" alt="image" src="https://github.com/user-attachments/assets/5447c7cf-e6ab-4fc4-942f-b93569b3be3d" /> 
 
 
 **Annotations:** 
@@ -68,8 +68,9 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 - Then: systemctl enable --now httpd so that system is auto-enabled when the system is booted
 - Then, enabled SSH
 
-<img width="492" height="43" alt="image" src="https://github.com/user-attachments/assets/a46ad183-2263-4d45-bf0d-ba9176285c7d" />
+<img width="492" height="43" alt="image" src="https://github.com/user-attachments/assets/a46ad183-2263-4d45-bf0d-ba9176285c7d" /> 
 
+\
 <img width="425" height="233" alt="image" src="https://github.com/user-attachments/assets/f8a74a13-613a-40c4-8cae-844c708231bb" />
 
 **Annotations:** 
@@ -159,6 +160,7 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 
 <img width="178" height="69" alt="image" src="https://github.com/user-attachments/assets/d88a215c-3395-45d3-ae78-0bb01ce7efa4" />
 
+<br>
 
 <img width="636" height="774" alt="image" src="https://github.com/user-attachments/assets/7ba6f78c-8717-4c14-824f-d13981ad7229" />
 
