@@ -144,7 +144,6 @@ The above DB is on the same server as the Web Server which is okay but not effic
 
 <img width="669" height="621" alt="image" src="https://github.com/user-attachments/assets/f96111fd-902d-4bb5-8273-a9a40e8022b9" />
 
-<b/>
 <img width="694" height="404" alt="image" src="https://github.com/user-attachments/assets/4676c424-818f-4af1-92d6-a850583b23d8" />
 
 
@@ -220,7 +219,6 @@ The above DB is on the same server as the Web Server which is okay but not effic
 <img width="335" height="49" alt="image" src="https://github.com/user-attachments/assets/3d31524b-d01c-4009-a0b9-49cb9263de87" />
 
 **Annotations:** Since moving more to a remote DB, I think I need help in managing it, oh hey! Look, jr_john who's also a Junior System Admin will be joining the team, he needs some permissions....but it's kinda awkward to have to have two people with root, so I''ll make him also an admin on the DB server. 
-
 
 
 # Overall Basic Security 
