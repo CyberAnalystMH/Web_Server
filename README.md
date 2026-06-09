@@ -182,6 +182,8 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 
 **Annotations:**  Now the User cannot use a weak password to authenticate and must user a strong password. 
 
+**FTP**
+
 <img width="681" height="138" alt="image" src="https://github.com/user-attachments/assets/a58403e8-641e-4038-b616-868580e72af3" />
 
 **Annotations:** Our talented Interns are great but they have 0 Linux knowledge because they're hard at work to make the Web HTML great, they need a costume folder for me (The Admin) to store their stuff.
