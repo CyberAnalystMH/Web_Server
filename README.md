@@ -84,9 +84,7 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 - Because SELinux will automatically block a new directories in httpd.conf, semanage must be used
 
 
-<img width="885" height="114" alt="image" src="https://github.com/user-attachments/assets/7b2423af-d5bb-43b0-89b7-1afd39ebd15b" />
-
-<img width="196" height="24" alt="image" src="https://github.com/user-attachments/assets/78b648c1-1a7c-49d5-ba55-9aa3e8f71268" />
+<img width="874" height="115" alt="image" src="https://github.com/user-attachments/assets/46572bf1-576a-41a5-8643-e3930486899f" />
 
 
 **Annotations:** 
@@ -128,10 +126,6 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 
 
 <img width="967" height="314" alt="image" src="https://github.com/user-attachments/assets/d70042e6-aa18-45a7-ae5c-7340cdfd99c0" />
-
-**Annotations:** Names are made up but this is a working DB with working functions, very basic but gets the job done.
-
-<img width="967" height="314" alt="image" src="https://github.com/user-attachments/assets/90896ed0-a618-4a45-b5e5-0b50f1bbf608" />
 
 **Annotations:** Names are made up but this is a working DB with working functions, very basic but gets the job done.
 
@@ -277,3 +271,10 @@ This was a lot of fun, despite simple, It felt rewarding in seeing how real worl
 
 ***No AI was used to write this repository.*** 
 
+# Next Steps 
+
+- Separate the DB from the server and have it on a different server.
+- Backup the systems in full or incremental. 
+- Add more data to the DB.
+- Add FIM (File Integrity Monitoring) on both servers.
+- Deploy a HA (High Availability) for when the Web Server goes down for any reason. 
