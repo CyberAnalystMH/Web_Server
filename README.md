@@ -77,16 +77,16 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 - Then made a directory for my project: mkdir /server_project with an index.html.
 - Instead of /var/www/html, I wanted it to point to /server_project.
 
+<img width="885" height="114" alt="image" src="https://github.com/user-attachments/assets/8bc2d32c-4757-4441-b110-a84ae79a6474" />
 
-<img width="885" height="114" alt="image" src="https://github.com/user-attachments/assets/40b1e2a0-36fc-4ed7-9d15-e1bbfb60884d" />
 
 
 **Annotations:** 
 - Because SELinux will automatically block a new directories in httpd.conf, semanage must be used.
 
+<img width="648" height="117" alt="image" src="https://github.com/user-attachments/assets/d907e62e-2a09-48db-a31d-ef13d9eb6276" />
 
-<img width="874" height="115" alt="image" src="https://github.com/user-attachments/assets/46572bf1-576a-41a5-8643-e3930486899f" />
-
+\
 <img width="196" height="24" alt="image" src="https://github.com/user-attachments/assets/91dbda01-5d05-4020-b56b-8226bcde11af" />
 
 
@@ -139,7 +139,7 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 **Rules and Configs:**
 - 3 Dev Team collab, named: Luke, Nate, Lisa
 - They get a welcome.txt letting them know about updates and what not.
-- They're not allowed access to anything accept /collab folder
+- They're not allowed access to anything expect /collab folder
 - Luke is the only one allowed to rwx because he's the Dev Leader, the other two can only Read and Write
 
 <img width="768" height="67" alt="image" src="https://github.com/user-attachments/assets/e66c6b0a-0d6c-4b4e-a613-c95e5e381b64" />
@@ -177,8 +177,6 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 **Annotations:**  /etc/login.defs is very limited on authentication so PAM would need to be used with defined rules. 
 
 <img width="720" height="123" alt="image" src="https://github.com/user-attachments/assets/b86c8055-5e7d-41e6-8837-4145a5292717" />
-
-**FTP**
 
 **Annotations:**  Now the User cannot use a weak password to authenticate and must user a strong password. 
 
