@@ -300,9 +300,9 @@ This was a lot of fun, despite simple, It felt rewarding in seeing how real worl
 
 # Next Steps 
 
-- Separate the DB from the server and have it on a different server.
-- Backup the systems in full or incremental. 
-- Add more data to the DB.
+- Separate the DB from the server and have it on a different server. ✅
+- Backup the systems in full or incremental. ✅
+- Add more data to the DB. ✅
 - Add FIM (File Integrity Monitoring) on both servers.
 - Deploy a HA (High Availability) for when the Web Server goes down for any reason. 
 - Add more automation.
