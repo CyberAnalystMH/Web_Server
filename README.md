@@ -6,7 +6,7 @@ One of the most used cases for Linux Servers is a web server, making the backend
 
 **This repo will update overtime:**
 
-**Last Update:** 6/8/2026
+**Last Update:** 6/10/2026
 # Setup
 
 **Theme/Scenario:** Let's say I'm famous and everyone wants to hire me/my company, I made a website where companies puts first name, last name, email and phone number in order to contact me and my small team, that data is stored in a DB. 
@@ -23,10 +23,17 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 - Adding other users for a collaborative projects 
 
 **Hardware and System** 
+**Web  Server:**
 - Rocky Linux (No GUI)
 - 40GB of Storage
 - 3 CPUs
 - 6GB 
+- VM on Proxmox
+**Database  Server:**
+- Rocky Linux (No GUI)
+- 45GB of Storage
+- 3 CPUs
+- 8GB 
 - VM on Proxmox
 
 **Basic Configurations:** 
@@ -147,7 +154,7 @@ The above DB is on the same server as the Web Server which is okay but not effic
 <img width="694" height="404" alt="image" src="https://github.com/user-attachments/assets/4676c424-818f-4af1-92d6-a850583b23d8" />
 
 
-**Annotations:** After following all the steps, it works on the remote server as well, the only difference is instead of "localhoist" on the php, it's just the IP address of the remote server. Now this wouldn't been much easier if I simply cloned the Web Server and removed the httpd aspects and left everything else but sometimes starting fresh is better.
+**Annotations:** After following all the steps, it works on the remote server as well, the only difference is instead of "localhost" on the php, it's just the IP address of the remote server. Now this wouldn't been much easier if I simply cloned the Web Server and removed the httpd aspects and left everything else but sometimes starting fresh is better.
 
 # Managing Users
 
