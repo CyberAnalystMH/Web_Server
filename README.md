@@ -29,6 +29,7 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 - 3 CPUs
 - 6GB 
 - VM on Proxmox
+
 **Database  Server:**
 - Rocky Linux (No GUI)
 - 45GB of Storage
