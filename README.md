@@ -64,6 +64,12 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 - Btop - To get a nice visual monitoring on system
 - GPG for file encryption
 
+# Infrastructure 
+
+<img width="750" height="861" alt="image" src="https://github.com/user-attachments/assets/c659b546-63b7-40b4-9ef3-1c47bf33eb7a" />
+
+
+
 # HTTPD
 
 
