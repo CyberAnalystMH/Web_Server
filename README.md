@@ -66,7 +66,7 @@ Here's the exact simple HTML code I'm using: https://codepen.io/terf/pen/bGRavY
 
 # Infrastructure 
 
-<img width="750" height="861" alt="image" src="https://github.com/user-attachments/assets/a5092465-ad33-468e-be8b-39cd55b81aa0" />
+<img width="750" height="921" alt="image" src="https://github.com/user-attachments/assets/41abc495-031e-4d38-9a3b-d09e1ce11427" />
 
 
 
