@@ -6,7 +6,7 @@ One of the most used cases for Linux Servers is a web server, making the backend
 
 **This repo will update overtime:**
 
-**Last Update:** 6/10/2026
+**Last Update:** 6/11/2026
 # Setup
 
 **Theme/Scenario:** Let's say I'm famous and everyone wants to hire me/my company, I made a website where companies puts first name, last name, email and phone number in order to contact me and my small team, that data is stored in a DB. 
@@ -234,6 +234,28 @@ The above DB is on the same server as the Web Server which is okay but not effic
 
 **Annotations:** Since moving more to a remote DB, I think I need help in managing it, oh hey! Look, jr_john who's also a Junior System Admin will be joining the team, he needs some permissions....but it's kinda awkward to have to have two people with root, so I''ll make him also an admin on the DB server. 
 
+# NFS
+
+Awhile I can use SCP or Rsync to have folders being shared between the Web Server and Database Server, I figured it would be much easier to setup NFS so both servers can constantly share the same folders for future projects. 
+
+<img width="581" height="239" alt="image" src="https://github.com/user-attachments/assets/3a7498ca-6aeb-411c-945c-ce7e090027d9" />
+
+**Annotations:** We first must install nfs-utils on both server which gives NFS-Server and other useful utils for NFS. Then we make a directory where both servers can share, then configure it in the /etc/exports with the subnet. Lastly, we add the service to our Firewall then give write and ownership to root for that directory. 
+
+<img width="941" height="41" alt="image" src="https://github.com/user-attachments/assets/56350f7b-a122-42b0-bc24-b9ec2501c4c7" />
+
+**Annotations:** On the DB Server, we mount it after adding out server to /etc/hosts.
+
+<img width="411" height="131" alt="image" src="https://github.com/user-attachments/assets/6c5dff63-1c5d-4209-ae5d-69a6f965900d" />
+
+**Annotations:** I moved simple configs to the DB server to easily be copied over, to test it out.
+
+<img width="1072" height="27" alt="image" src="https://github.com/user-attachments/assets/e5d2a762-9cf5-4d9b-98e4-528820faf693" />
+
+**Annotations:** Then I simply mounted it in /etc/fstab. I figured Autofs would be better and efficient for this, so I installed Autofs and made a direct mounting. 
+
+
+
 
 # Overall Basic Security 
 
@@ -276,8 +298,20 @@ Linux Hardening is fun and complicated. There are several tools to guide you thr
 
 **Annotations:** Encrypted the Web Server files using **gocryptfs** then ran into issue but then I encrypted /encrypted and put the /server_project into that directory and re-did semanage and restorecon and works. 
 
+**Other Security Aspects:**
+- Strong password for Admin User
+- Disabling Root overall
+- Complex password for Non-Admin users
+
 **I couldn't do:**
-- Full Disk Encryption (FDE) because it's too late but great to setup upon the installer, using LUKS, so **gocryptfs** was the best second thing to do.
+- Full Disk Encryption (FDE) because it's too late but great to setup upon the installer, using LUKS, so **gocryptfs** was the best second thing to do. 
+
+<img width="511" height="299" alt="image" src="https://github.com/user-attachments/assets/f58ac6cf-336d-4b51-865f-8d5cb2aa26d4" />
+
+
+**Annotations:** Going back to my "Defense-In-Depth" action, I installed Tripwire on both servers and did a simple test to see if it works of detecting modifying files and then I added it to crontab so it auto runs.
+
+
 
 # Overall Basic Automation
 
@@ -288,6 +322,8 @@ Linux Hardening is fun and complicated. There are several tools to guide you thr
 **Annotations:** Thanks to **LearnLinuxTV** I was able to follow in making this great script for file backup.
 
 <img width="545" height="199" alt="image" src="https://github.com/user-attachments/assets/04ac8e69-6943-4c28-9de8-02624ef04784" />
+
+<br>
 
 <img width="263" height="27" alt="image" src="https://github.com/user-attachments/assets/145a9026-caa9-4329-9f19-e4d0fdb334a4" />
 
@@ -323,6 +359,7 @@ This was a lot of fun, despite simple, It felt rewarding in seeing how real worl
 - Separate the DB from the server and have it on a different server. ✅
 - Backup the systems in full or incremental. ✅
 - Add more data to the DB. ✅
-- Add FIM (File Integrity Monitoring) on both servers.
+- Add FIM (File Integrity Monitoring) on both servers. ✅
 - Deploy a HA (High Availability) for when the Web Server goes down for any reason. 
 - Add more automation.
+- Setup NFS-Server. ✅
